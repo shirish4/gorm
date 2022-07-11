@@ -56,7 +56,7 @@ preMerge :
         command:
             - "go get -d ./..."
             - "go mod vendor"
-     - name: package-6
+    - name: package-6
       path : "./utils"
       pattern:
         # glob-patterns to discover tests to run in case of postMerge
