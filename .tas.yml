@@ -2,51 +2,7 @@ version: 2.0.0
 preMerge :
   subModules:
     - name: package-1
-      path : "./callbacks"
-      pattern:
-        # glob-patterns to discover tests to run in case of postMerge
-        - ""
-      framework : golang
-      preRun: 
-        runEveryTime: false # if set to true it will run on test execution as well
-        command:
-            - "go get -d ./..."
-            - "go mod vendor"
-    - name: package-2
-      path : "./clause"
-      pattern:
-        # glob-patterns to discover tests to run in case of postMerge
-        - ""
-      framework : golang
-      preRun: 
-        runEveryTime: false # if set to true it will run on test execution as well
-        command:
-            - "go get -d ./..."
-            - "go mod vendor"
-    - name: package-3
-      path : "./logger"
-      pattern:
-        # glob-patterns to discover tests to run in case of postMerge
-        - ""
-      framework : golang
-      preRun: 
-        runEveryTime: false # if set to true it will run on test execution as well
-        command:
-            - "go get -d ./..."
-            - "go mod vendor"
-    - name: package-4
-      path : "./schema"
-      pattern:
-        # glob-patterns to discover tests to run in case of postMerge
-        - ""
-      framework : golang
-      preRun: 
-        runEveryTime: false # if set to true it will run on test execution as well
-        command:
-            - "go get -d ./..."
-            - "go mod vendor"
-    - name: package-5
-      path : "./utils"
+      path : "./"
       pattern:
         # glob-patterns to discover tests to run in case of postMerge
         - ""
